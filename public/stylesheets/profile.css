@@ -1,0 +1,32 @@
+.profile .head-photo{
+	width: 165px;
+	height: auto;
+}
+
+.profile .name{
+	text-align: left;
+}
+
+.profile .list{
+	padding-top: 15px;				
+}
+
+.profile .info{
+	text-align: left;				
+}
+
+.profile .record p{
+	margin-bottom: 0.75em;
+}
+
+.profile .record .course{
+	margin-bottom: 2em;				
+}
+
+.profile .school-logo{
+	width: 60px;
+	height: 100%;
+	margin-bottom: 5px;
+}
+
+

@@ -1,0 +1,18 @@
+[
+	{
+		"eventLogo": "ChinaJoy.jpg",
+		"title": "China Joy",
+		"period": "July 25th - 28th 2013",
+		"length": "4 days",
+		"location": "Shanghai",
+		"flagName": "flag-cn"
+	},
+	{
+		"eventLogo": "GMIC.jpg",
+		"title": "Gloabl Mobile Internet Conference",
+		"period": "May 27th - 28th 2012",
+		"length": "2 days",
+		"location": "Beijing",
+		"flagName": "flag-cn"
+	}
+]

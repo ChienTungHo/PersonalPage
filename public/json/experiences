@@ -1,0 +1,47 @@
+[
+	{
+		"companyLogo": "appier-logo.png",
+		"companyName": "Appier",
+		"title": "Compaign Manager",
+		"period": "May 2013 - July 2013",
+		"length": "3 months",
+		"location": "Taiwan",
+		"flagName": "flag-tw"
+	},
+	{
+		"companyLogo": "appier-logo.png",
+		"companyName": "Appier",
+		"title": "Product Manager",
+		"period": "Sep. 2012 - April 2013",
+		"length": "8 months",
+		"location": "Taiwan",
+		"flagName": "flag-tw"
+	},
+	{
+		"companyLogo": "appier-logo.png",
+		"companyName": "Appier",
+		"title": "Software Engineer",
+		"period": "Nov. 2011 - Sep. 2012",
+		"length": "11 months",
+		"location": "Taiwan",
+		"flagName": "flag-tw"
+	},
+	{
+		"companyLogo": "trend-micro-logo.png",
+		"companyName": "Trend Micro",
+		"title": "Intership",
+		"period": "July 2010 - Aug. 2010",
+		"length": "2 months",
+		"location": "Taiwan",
+		"flagName": "flag-tw"
+	},
+	{
+		"companyLogo": "yahoo-logo.jpg",
+		"companyName": "Yahoo",
+		"title": "Intership",
+		"period": "July 2009 - Aug. 2009",
+		"length": "2 months",
+		"location": "Taiwan",
+		"flagName": "flag-tw"
+	}
+]

@@ -1,0 +1,309 @@
+html
+  head
+    - var title="Chien-Tung,Ho"
+    title #{title}
+    meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
+    meta(name="keywords" content="Chien-Tung,Ho;何建彤;Profile;Paper")
+    meta(name="description" content="")
+    meta(name='viewport', content='width=1040')
+    
+    // jQuery (necessary for Bootstrap's JavaScript plugins) 
+    script(src="js/jquery.min.js")
+    //script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js')
+
+    // Google fonts
+    link(href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700" rel="stylesheet" type="text/css")
+    
+    // CSS template
+    script(src="js/jquery.dropotron.min.js")
+    script(src="js/config.js")
+    script(src="js/skel.min.js")
+    script(src="js/skel-panels.min.js")
+    noscript
+      link(rel="stylesheet" href="css/skel-noscript.css")
+      link(rel="stylesheet" href="css/style.css")
+      link(rel="stylesheet" href="css/style-desktop.css")
+    
+    // Bootstrap 
+    link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.css')
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js')
+
+    // customize CSS 
+    link(rel='stylesheet', type='text/css', href='stylesheets/main.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/banner.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/profile.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/experience.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/flags.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/publication.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/project.css')
+    // customize Javascript
+    script(src="javascripts/main.js")
+
+  body.homepage
+
+    // Header Wrapper    
+    #header-wrapper
+      // Header
+      #header.container
+        h1#logo Work Smart
+        p Passion + Learning + Inovation = Success
+      
+        nav#nav
+          ul
+            li
+              a.fa.fa-home(href='#about')
+                span &nbsp;About
+            li
+              a.fa.fa-sitemap(href='#experience')
+                span &nbsp;Experience
+            li
+              a.fa.fa-bar-chart-o(href='#publication')
+                span &nbsp;Publications
+            li
+              a.fa.fa-retweet(href='#project')
+                span &nbsp;Projects
+            li
+              a.fa.fa-cog(href='#contact')
+                span &nbsp;Contact
+    
+    // Main Content
+    #features-wrapper
+      // Contents of profile
+      section#about.container.profile
+        // start profile 
+        h2
+          strong Chien-Tung Ho 何建彤
+        .row  
+          .5u
+            img.pull-right.head-photo.img-circle(src='images/profile/head.jpg')
+          .7u
+            .list
+              h3.info
+                span.glyphicon.glyphicon-map-marker
+                | &nbsp;Taipei, Taiwan | Computer Science
+              h3.info
+                span.glyphicon.glyphicon-phone
+                | &nbsp;(+886) 0911396309
+              h3.info
+                span.glyphicon.glyphicon-envelope
+                | &nbsp;
+                a#mail(href='mailto:#') ho_tongtong@yahoo.com.tw
+              h3.info
+                span.glyphicon.glyphicon-globe
+                | &nbsp;Chinese, English
+        // end of profile 
+        .row.record
+          // start skill 
+          .4u
+            h2 Skills
+            h4【Programming Language】 
+            p  PHP, Python, C/C++, Java
+            h4【Frontend Programming】
+            p  JavaScript, CSS, Sass, Mako, Jade, HTML
+            h4【Database】 
+            p  MySQL, MongoDB, Amazon-RDS, Hive
+            h4【Web Framework】
+            p  Bottle, Pyramid, NodeJs
+            h4【Cloud Service】
+            p  Amazon EC2, linknode, Amazon Elastic MapReduce 
+            h4【App Service】
+            p  Amazon-SES, Amazon-SQS, RabittMQ
+            h4【Storage】
+            p  Amazon-S3, Redis
+          // end skill 
+          
+          // start courses 
+          .4u
+            h2 Courses
+            h5.course Statistical Methods for Intelligent Information
+            h5.course Social Network Analysis and Graph Mining
+            h5.course Web Retrieval and Mining
+            h5.course Natural Language Processing
+            h5.course Data Mining
+
+          // end courses 
+        
+          // start eductional records 
+          .4u
+            h2 Schools
+            .row
+              .12u
+                img.school-logo(src='images/profile/ntu-logo.png')
+                h4 National Taiwan University
+                h6 Graduate Institute of Networking and Multimedia Graduated
+                h6 2008 - 2010
+            .row
+              .12u
+                img.school-logo(src='images/profile/ccu-logo.png')
+                h4 National Chung Cheng University
+                h6 Computer Science and Information Engineering
+                h6 2004 - 2008
+          // end educational records 
+   
+    // Banner Wrapper
+    #banner-wrapper
+      .inner
+        section#banner.container
+          p.banner 
+            | I am a young, positive, and active guy.<br> It’s my pleasure to have this opportunity to introduce myself to you.
+
+    // Main Wrapper 
+    #features-wrapper  
+      // Contents of experience
+      section#experience.container.experience
+        // start experiences 
+        header
+          h2 Work Experiences
+        .row
+          - each experience in experiences
+            .3u.exp
+              section
+                // job list
+                .row
+                  .12u
+                    center 
+                      img.company-logo.thumbnail(src="images/experience/"+experience.companyLogo)
+                header
+                  h3 #{experience.title}
+                .row
+                  center
+                    .loc-group
+                      .company-flag.flag(class=experience.flagName)
+                      .company-location #{experience.location}
+                .clearfix
+                h6 #{experience.period}
+                h6 #{experience.length}
+                    
+            // end work experience
+      
+        // start activity
+        header
+          h2 Activities
+        .row
+          - each activity in activities
+            .3u.exp
+              section
+                // activity list
+                .row
+                  .12u
+                    center
+                      img.event-logo.img-thumbnail(src="images/experience/"+activity.eventLogo)
+                header
+                  h3 #{activity.title}
+                .row
+                  center
+                    .loc-group
+                      .event-flag.flag(class=activity.flagName)
+                      .event-location #{activity.location}
+                .clearfix
+                h6 #{activity.period}
+                h6 #{activity.length}
+          // end activies experience
+      
+      // Contents of publication
+      section#publication.container.publication
+        .row
+          // start publication
+          #sidebar.12u
+            section
+              h2 publications
+              ul.divided
+                - each publication in publications
+                  li
+                    article.is-excerpt
+                      .row
+                        .12u
+                          header
+                            .row
+                              .12u
+                                span.date.pull-left #{publication.tag}
+
+                              .12u
+                                h3.title #{publication.title}
+  
+                        .12u
+                          .pull-left
+                            p.info
+                              - if (publication.type != 'Best Full Paper')
+                                【#{publication.type}】
+                              - else
+                                strong 【#{publication.type}】
+                              | &nbsp;#{publication.head}&nbsp;
+                              // Button trigger modal
+                              a.modal-btn(data-modal=publication.modalBtn) (more)
+                              // Modal
+                              .modal.fade(id=publication.modalBtn)
+                                .modal-dialog
+                                  .modal-content
+                                    .modal-header
+                                      h4.modal-title Abstract
+                                    .modal-body 
+                                      p(style="text-align:left") #{publication.abstract}
+                                      span.glyphicon.glyphicon-cloud-download
+                                        | &nbsp;
+                                      a(href=publication.paper target="_blank") Download
+                                      | &nbsp;&nbsp;&nbsp;&nbsp;
+                                      - if (publication.video != '')
+                                        span.glyphicon.glyphicon-facetime-video
+                                        | &nbsp;
+                                        a(href=publication.video target="_blank") video
+                                    .modal-footer
+                                      a.button.button-icon(data-dismiss="modal") Close
+
+      // Contents of project
+      section#project.container.project
+        h2 Projects
+        .row
+          - each project in projects
+            .4u.project-block
+              .row
+                h4.title #{project.title}
+                h5.duration #{project.duration}
+                p(style="text-align:left").issue #{project.issue}
+                // Button trigger modal
+                .pull-right
+                  a.modal-btn(data-modal=project.modalBtn) (more)
+                // Modal
+                .modal.fade(id=project.modalBtn)
+                  .modal-dialog
+                    .modal-content
+                      .modal-header
+                        h4.title #{project.title}
+                      .modal-body
+                        .row
+                          .12u
+                            span.pull-left.tag Period
+                          .12u
+                            h5.duration #{project.duration}
+                          .12u
+                            span.pull-left.tag Issue
+                          .12u
+                            .issue #{project.issue}
+                          .12u
+                            span.pull-left.tag Service
+                          .12u
+                            ul.service
+                              - each description, index in project.service
+                                li.description #{index+1}. #{description}
+                          .12u
+                            span.pull-left.tag Client
+                          .12u
+                            h6.ta #{project.TA}
+                      .modal-footer
+                        a.button.button-icon(data-dismiss="modal") Close
+                        
+              
+            
+
+  // Contents of contact
+  #footer-wrapper
+    #footer#contact.container
+      .header
+        h2 Questions or comments?&nbsp;
+          strong Get in touch:
+
+        h2#mail.fa.fa-envelope &nbsp; ho_tongtong@yahoo.com.tw
+
+    #copyright.container
+      h6 &copy; Chien-Tung,Ho. All rights reserved

@@ -1,0 +1,59 @@
+[
+	{
+		"title": "A Comprehensive Ad Buying Service Driven by Proprietary AI Technology and RTB Systems",
+		"duration": "March 2013 – July 2013",
+		"TA": "app developer, advertising agency, brand company",
+		"issue": "There are many app companies and advertising agencies that assist developers to promote their apps or brands on mobile devices with limited budgets. And there exists many advertising platform on the market place. In general, the advertising performance depends on the types and aims of products. Therefore, to effectively and efficiently promote the products, it is crucial to come up with good promotion strategies which can use limited budget to reach the maximum target audiences.",
+		"service": [ "We develop a centralized control system that can deal with any kinds of ad platforms. We also design a multi-functional panel to facilitate the manipulation of the campaign.",
+								 "Our system can automatically keep track of the advertising performance by seamlessly integrating with our customers. (It resembles that SDKs is integrated with the app publishers)",
+								 "After receiving the advertising budgets, our system can assist campaign managers to make strategies and schedule the campaigns. In addition, we also control the influence between different campaigns within the limited advertising display time. We target at exploit user location, traffic time and the categories of apps to help campaign manager run the campaigns.",
+								 "Our system conducts a two-step execution for process the campaign. In order to collect all kinds of advertising results, we first use the initial setting for the campaign in a limited time period as sampling mode. Then we automatically extract the customized information from the historical results to retarget new audiences in the ad platform. Such new audiences will reinforce the setting of the campaign. This procedure will run adaptively till spending all ad budgets.",
+								 "During the campaign, our system can generate campaign reports for our customers to do further analytics."
+		           ],
+		"modalBtn": "project0"
+	},
+	{
+		"title": "An Open Market Place for Advertising Channel (Blog, Review Site)",
+		"duration": "Nov. 2012 – Feb. 2013",
+		"TA": "app developer, review site writer or blogger",
+		"issue": "In the current fast-growing app industry, how to boost the appearance chances of apps in the mobile world is a critical issue. With the app information provided by developers, more and more site owners and bloggers are employed to write app reviews to promote or recommend useful/interesting apps for users. Therefore, to enhance the performance of promotion through reviews, it is potential and beneficial to create an effective and efficient communication channel between the writers and app developers.",
+		"service": [ "We first collect all a plentiful number of app review sites and advertising blogs and extract the information, such as the site location, the available display time and the price.",
+		             "To facilitate the communication between the app developers and the writers. We developed a platform that provides both sides to exchange and negotiate the advertising method, display time limitation, and price information.",
+								 "App developers are allowed to select the advertising methods on our platform and deliver the promotion requests to the writers. Each review writer is able to approve or reject the request and provide some feedbacks back to the developers.",
+								 "As the writer accepts the order, the system will generate a short html code for the writer’s use so that the writer can promote the apps with the accompaniment of concrete exhibition of the app. On the contrary, the system will inform the app developer about whether the promotion review/ad has been displayed correctly or not."
+		           ],
+		"modalBtn": "project1"
+	},
+	{
+		"title": "A Free Market Place for Mobile Advertising like Alibaba.com",
+		"duration": "Aug. 2012 – Oct. 2012",
+		"TA": "app developer",
+		"issue": "App developers usually tend to maximize the utility of their advertising budgets when promoting their apps on the specified apps. However most of the ad platforms are not allowed developers to advertise on the specific apps. Though some ad platforms are integrated by free apps, they are not able to determine which ad is suitable for promoting in their apps. Therefore, we aim to develop and provide a market place to make the buyers and sellers can effectively and efficiently communicate and trade, like Alibaba.com.",
+		"service": [ "Our platform allows ad publishers to register their apps and list all the advertising inventories in their apps, after integrating the SDK.",
+		             "App advertisers can select any particular registered apps that they are willing to use for app promotions. Though the devised instant messaging function, we further enable the communications between advertisers and app publishers."
+		           ],
+		"modalBtn": "project2"
+	},
+	{
+		"title": "Cross Promotion Platform for Mobile Advertising",
+		"duration": "May 2012 – July 2012",
+		"TA": "app developer",
+		"issue": "New app developers usually have few marketing resources to promote their apps. What the new developers can do most is attempting to post their apps somewhere to increase the app appearance chance. We believe that it would be a great opportunity to provide a cross-promotion (i.e., promoting each other) platform for the developers to increase the appearances in the ad platform.",
+		"service": [ "All the app developers can register the ad network after integrating with the SDK which provided by the platform.",
+								 "Our system record the click times for each app through displaying the corresponding ads. Then we will automatically adjust effective strategies for developers to optimize the total Click-Through-Rate in the ad platform. The general idea aims at balancing the click times for the cross-promoted apps.",
+								 "Both banners and interstitial ads are displayed in the app recommendation list, in which users can scroll to change the ads. By asking for the service fee, our system further allows the developers to customize the ad displayed methods by extract some parts of ad slots from the recommendation list.",
+								 "If the developers are not willing to attend the cross-promotion, our system can provide basic promotions according to their ad budgets."
+		           ],
+		"modalBtn": "project3"
+	},
+	{
+		"title": "User LTV Prediction and Ad Channel Analysis Platform",
+		"duration": "Nov. 2011 – April 2012",
+		"TA": "web game publisher",
+		"issue": "Web game publishers are usually unable to analyze the qualities of gamers from their historical playing records, and thus do not know the gamer’s life time value (LTV). However, such LTV information is beneficial for the publishers and developers to establish long term advertising plans and boost the marketing opportunities.",
+		"service": [ "We develop a platform for the publishers to track and analyze all the available gamers. Our platform further generates the tracking and analyzing URLs (linking to our service) which provide publishers to advertise on the ad network.",
+		             "We also keep track of all the transactions (i.e., deal records) in the game. Through combing the ad resources, gamers, and transactions, our system can predict the life time value for different groups of gamers. Such LTV information of different groups of users is presented to the publishers to construct advanced advertising plans."
+		           ],
+		"modalBtn": "project4"
+	}
+]

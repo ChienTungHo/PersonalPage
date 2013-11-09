@@ -1,0 +1,16 @@
+.publication{
+	padding-bottom: 100px;
+	border-bottom: solid 2px #e5e5e5;
+	box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5; 				
+}
+
+.publication .date,
+.publication .title{
+	text-align: left;				
+}
+
+.publication .info{
+	text-align: left;
+	color: #777;
+	margin-bottom: -15px;	
+}

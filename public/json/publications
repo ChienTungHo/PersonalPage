@@ -1,0 +1,42 @@
+[
+	{
+		"head": "Social Network Analysis and Mining",
+		"tag": "SNAM 2012",
+		"type": "Journal",
+		"title": "Modeling and Evaluating Information Propagation in a Microblogging Social Network",
+		"abstract": "Microblogging platforms, such as Twitter and Plurk, allow users to express feelings, discuss ideas, and share interesting things with their friends or even strangers with similar interests. With the popularity of microblogs, there are growing data and opportunities in understanding information propagation behaviors in online social networks. Though some influence models had been proposed based on certain assumptions, most of them are based on the simulation approach (not data driven). This paper aims at designing a framework to model, measure, evaluate, and visualize influence propagation in a microblogging social network. Considering how information contents are spread in a social network, we devise two influence propagation models from the views of messages posted and responded. Based on the proposed models, we are able to measure the influence capability of an individual with respect to a user-given topic. Our design of influence measures consider (a) the number of people influenced, (b) the speed of propagation, and (c) the geographic distance of the propagation. To test the effectiveness of our influence model, we further propose a novel evaluation framework that predicts the propagation links and influential nodes in a real-world microblogging social network. Finally, we develop an online visualization system allowing users to explore the information propagation with the functions of displaying propagation structures, influence scores of individuals, timelines, and the geographical information for any user-query terms.",
+		"paper": "http://link.springer.com/article/10.1007%2Fs13278-012-0082-8",
+		"video": "",
+		"modalBtn": "SNAM-2012"
+	},
+	{
+		"head": "IEEE/ACM Advances in Social Networks Analysis and Mining",
+		"tag": "ASONAM 2011",
+		"type": "Best Full Paper",
+		"title": "Modeling and Visualizing Information Propagation in Micro-Blogging Platform",
+		"abstract": "Micro-blogging is a type of social networking service that has become ubiquitous in Web 2.0 era. Micro-blogs allows bloggers to exchange information, discuss ideas, and share experiences with friends or even strangers with similar interests. In this paper, we try to identify ways to measure how information is propagated in micro-blogs. More specifically, we consider the following issues. (1) How to quantify a person's capability to disseminate ideas via a micro-blog. (2) How to measure the extent of propagation of a concept in a micro-blog. (3) How to demonstrate and visualize information propagation in a micro-blog. We propose methods to effectively measure each user's ability to disseminate information via micro-blogs. The design of the measure considers three factors: (a) the number of people influenced, (b) the speed of propagation, and (c) the geographic distance of the propagation. We also provide an online demonstration micro-blog system that allows the users to explore the information propagation. The system shows the propagation paths and social graphs, influence scores, timelines, and geographical information among people for the user-given terms.",
+		"paper": "http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992596&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992596",
+		"video": "http://www.youtube.com/watch?v=TZ0Z71BeKJk",
+		"modalBtn": "ASONAM-2011"
+	},
+	{
+		"head": "ACM International World Wide Web Conference",
+		"tag": "WWW 2010",
+		"type": "Poster",
+		"title": "Pusic: Musicalize Microblog Messages for Summarization and Exploration",
+		"abstract": "Micro-blogging services provide platforms for users to share their feelings and ideas on the go. Desiging to produce information stream in almost Micro-blogging services, although are capable of recording rich and diverse senses, still suffer from a drawback of not being able to provide deeper and summarized views. In this paper, we present a novel framework, Pusic, to musicalize micro-blogging messages for terms or users. Pusic can be used to (1) summarize users' messages into certain expression of emotions, (2) explore the emotions and senses and transform them into music, and (3) serve as a presentation of crowd net art. We generate the music from two aspects: emotion and harmony. The former is tackled by emotion detection from messages while the latter is estabilished by rule-based harmonic heuristics according to the detected emotions. Pusic has been announced online for people's experience and further investigation.",
+		"paper": "http://dl.acm.org/citation.cfm?id=1772844",
+		"video": "",
+		"modalBtn": "WWW-2010"
+	},
+	{
+		"head": "National RFID Exhibition & Conference",
+		"tag": "2008",
+		"type": "Full Paper",
+		"title": "Using RFID technology to detect the speed or monitor the position of the cars on high-speed roads",
+		"abstract": "本論文旨在實做 RFID 於車輛監控的系統，其中以改良目前道路監控系統中的車輛管理、車輛定位、測速與超速違規和車流監控等四個項目為主。 目前的測速照相機或測速槍的方式有一個很大的限制，就是無法一次對多台同時通過的車輛進行測速。對此我們利用 RFID  reader 可以高頻讀取的特性，同時紀錄多台超速車輛，以解決目前測速方式 的限制，並取得違規超速之記錄。就 GPS 的技術而言，無法對隧道中的車輛進行定位，因此我們的系 統在道路上以沿路架設 RFID  reader 的方式，讀取 車輛中的 tag，來辨識並定位車輛，這不僅可以彌 補 GPS 對隧道定位的不足，甚至可以定位一般道路 的車輛。由於我們將取得的車輛資料在 server  建 檔，因此 server 可以進行車流的計算處理，將所有 流程自動化與資訊化，我們也架設可供使用者查詢 的網站，裡頭提供了包括道路車流狀況、車輛速度等資訊。除了系統架設外，同時也針對 RFID 系統 受到外在環境干擾以及硬體設備之間的配合做了 以下三項容錯機制：(1)判斷 tag 是否已離開 reader 範圍或是受到干擾 (2)解決 reader 讀取 Tag 資料時，硬體設計的缺陷 (3)調整 reader 與 Creator 開發 板間讀取速度不一致的問題。",
+		"paper": "http://www.iservice.org.tw/db/research_content.php?id=432",
+		"video": "",
+		"modalBtn": "RFID-2008"
+	}
+]

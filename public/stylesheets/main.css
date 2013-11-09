@@ -1,0 +1,9 @@
+.modal .modal-body {
+	max-height: 420px;
+	overflow-y: auto;
+}
+
+#mail{
+	text-transform: lowercase;				
+}
+
