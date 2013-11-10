@@ -3,6 +3,15 @@
 	overflow-y: auto;
 }
 
+.button-icon,
+.modal-btn{
+	cursor: pointer;				
+}
+
+h2{
+	font-weight: bold;				
+}
+
 #mail{
 	text-transform: lowercase;				
 }
