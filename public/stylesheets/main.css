@@ -1,18 +1,17 @@
-.modal .modal-body {
-	max-height: 420px;
-	overflow-y: auto;
-}
-
 .button-icon,
 .modal-btn{
 	cursor: pointer;				
 }
 
 h2{
-	font-weight: bold;				
+	font-family: 'Arvo';
+	font-weight: 700;
+	color: #ed786a;
+	text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
 }
 
 #mail{
-	text-transform: lowercase;				
+	text-transform: lowercase;
+        color: #888;	
 }
 

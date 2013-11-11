@@ -993,7 +993,7 @@
 			text-align: center;
 		}
 	
-	#features-wrapper
+	.features-wrapper
 	{
 		position: relative;
 		overflow: hidden;
@@ -1001,12 +1001,12 @@
 		text-align: center;
 	}
 	
-		#features-wrapper p
+		.features-wrapper p
 		{
 			text-align: center;
 		}
 	
-		#features-wrapper .actions
+		.features-wrapper .actions
 		{
 			margin-top: 1.25em;
 		}

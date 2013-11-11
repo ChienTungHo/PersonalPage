@@ -1,11 +1,10 @@
 html
   head
-    - var title="Chien-Tung,Ho"
-    title #{title}
+    title Chien-Tung,Ho
     meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
     meta(name="keywords" content="Chien-Tung,Ho;何建彤;Profile;Paper")
     meta(name="description" content="")
-    meta(name='viewport', content='width=1040')
+    //meta(name='viewport', content='width=1040')
     
     // jQuery (necessary for Bootstrap's JavaScript plugins) 
     script(src="js/jquery.min.js")
@@ -27,7 +26,7 @@ html
     
     // Bootstrap 
     link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.css')
-    script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js')
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js')
 
     // customize CSS 
     link(rel='stylesheet', type='text/css', href='stylesheets/main.css')
@@ -68,30 +67,33 @@ html
                 span &nbsp;Contact
     
     // Main Content
-    #features-wrapper
+    .features-wrapper
       // Contents of profile
       section#about.container.profile
         // start profile 
         h2
           strong Chien-Tung Ho 何建彤
         .row  
-          .5u
-            img.pull-right.head-photo.img-circle(src='images/profile/head.jpg')
-          .7u
-            .list
-              h3.info
-                span.glyphicon.glyphicon-map-marker
-                | &nbsp;Taipei, Taiwan | Computer Science
-              h3.info
-                span.glyphicon.glyphicon-phone
-                | &nbsp;(+886) 0911396309
-              h3.info
-                span.glyphicon.glyphicon-envelope
-                | &nbsp;
-                a#mail(href='mailto:#') ho_tongtong@yahoo.com.tw
-              h3.info
-                span.glyphicon.glyphicon-globe
-                | &nbsp;Chinese, English
+          .3u &nbsp;
+          .8u
+            .row
+              .4u
+                img.head-photo.img-circle(src='images/profile/head.jpg')
+              .8u.list
+                h3.info
+                  span.glyphicon.glyphicon-map-marker
+                  | &nbsp;Taipei, Taiwan
+                h3.info
+                  span.glyphicon.glyphicon-phone
+                  | &nbsp;(+886) 0911396309
+                h3.info
+                  span.glyphicon.glyphicon-envelope
+                  | &nbsp;
+                  a#mail(href='mailto:#') ho.tongtong@gmail.com
+                h3.info
+                  span.glyphicon.glyphicon-globe
+                  | &nbsp;Chinese, English
+          .1u &nbsp;
         // end of profile 
         .row.record
           // start skill 
@@ -149,7 +151,7 @@ html
             | I am a young, positive, and active guy.<br> It’s my pleasure to have this opportunity to introduce myself to you.
 
     // Main Wrapper 
-    #features-wrapper  
+    .features-wrapper  
       // Contents of experience
       section#experience.container.experience
         // start experiences 
@@ -157,7 +159,7 @@ html
           h2 Work Experiences
         .row
           - each experience in experiences
-            .3u.exp
+            .3u.exp.pull-left
               section
                 // job list
                 .row
@@ -201,6 +203,8 @@ html
                 h6 #{activity.length}
           // end activies experience
       
+    // Main Wrapper 
+    .features-wrapper  
       // Contents of publication
       section#publication.container.publication
         .row
@@ -218,19 +222,21 @@ html
                             .row
                               .12u
                                 span.date.pull-left #{publication.tag}
-
                               .12u
-                                h3.title #{publication.title}
+                                h3.title.pull-left #{publication.title}
   
                         .12u
-                          .pull-left
-                            p.info
-                              - if (publication.type != 'Best Full Paper')
-                                【#{publication.type}】
-                              - else
-                                strong 【#{publication.type}】
-                              | &nbsp;#{publication.head}&nbsp;
-                              // Button trigger modal
+                          .row
+                            .12u
+                              .p.info
+                                - if (publication.type != 'Best Full Paper')
+                                  [ #{publication.type} ]
+                                - else
+                                  strong [ #{publication.type} ]
+                                | &nbsp;#{publication.head}&nbsp;
+                                // Button trigger modal
+                          .row
+                            .12u
                               a.modal-btn(data-modal=publication.modalBtn) (more)
                               // Modal
                               .modal.fade(id=publication.modalBtn)
@@ -251,16 +257,21 @@ html
                                     .modal-footer
                                       a.button.button-icon(data-dismiss="modal") Close
 
+    // Main Wrapper 
+    .features-wrapper  
       // Contents of project
       section#project.container.project
         h2 Projects
         .row
           - each project in projects
-            .4u.project-block
+            .4u.project-block.pull-left
               .row
-                h4.title #{project.title}
-                h5.duration #{project.duration}
-                p(style="text-align:left").issue #{project.issue}
+                h4.pull-left.title #{project.title}
+                h5.pull-left.duration #{project.duration}
+                - if(project.issue.length > 300)
+                  p(style="text-align:left").issue #{project.issue.substr(0,300)}...
+                - else
+                  p(style="text-align:left").issue #{project.issue}
                 // Button trigger modal
                 .pull-right
                   a.modal-btn(data-modal=project.modalBtn) (more)
@@ -275,7 +286,7 @@ html
                           .12u
                             span.pull-left.tag Period
                           .12u
-                            h5.duration #{project.duration}
+                            h5.pull-left.duration #{project.duration}
                           .12u
                             span.pull-left.tag Issue
                           .12u
@@ -289,7 +300,7 @@ html
                           .12u
                             span.pull-left.tag Client
                           .12u
-                            h6.ta #{project.TA}
+                            h6.pull-left.ta #{project.TA}
                       .modal-footer
                         a.button.button-icon(data-dismiss="modal") Close
                         
@@ -300,10 +311,10 @@ html
   #footer-wrapper
     #footer#contact.container
       .header
-        h2 Questions or comments?&nbsp;
+        h2(style="color:#888;") Questions or comments?&nbsp;
           strong Get in touch:
 
-        h2#mail.fa.fa-envelope &nbsp; ho_tongtong@yahoo.com.tw
+        h2#mail.fa.fa-envelope &nbsp; ho.tongtong@gmail.com
 
     #copyright.container
       h6 &copy; Chien-Tung,Ho. All rights reserved

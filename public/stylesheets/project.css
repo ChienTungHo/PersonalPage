@@ -1,16 +1,14 @@
 .project-block{
-	border: 1px;
-	border-color: #e5e5e5;				
+	min-height: 350px;	
 }
 
 .project-block .title{
-	margin-top: 50px;
 	color: #ed786a;
 	font-weight: bold;
 }
 
 .project-block .tag{
-  display: inline;
+  display: inline-block;
   padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: bold;
@@ -20,8 +18,8 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: .25em;
-	background-color: #5bc0de;
-	margin: 10px 0;
+  background-color: #5bc0de;
+  margin: 10px 0;
 }
 
 .project-block .description{
@@ -35,5 +33,6 @@
 .project-block .service,
 .project-block .description,
 .project-block .issue{
-	text-align: left;				
+	text-align: left;
+        display: inline-block;	
 }

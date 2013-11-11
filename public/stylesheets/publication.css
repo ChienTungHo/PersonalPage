@@ -6,7 +6,8 @@
 
 .publication .date,
 .publication .title{
-	text-align: left;				
+	text-align: left;
+	display: inline-block;
 }
 
 .publication .info{
