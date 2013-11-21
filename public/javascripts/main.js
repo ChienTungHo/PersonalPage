@@ -1,14 +1,30 @@
+function detectmob() { 
+ if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    return true;
+  }
+ else {
+    return false;
+  }
+}
+
 $(document).ready(function(){
-		$('.modal-btn').on('click',function(e){
+		
+                setTimeout(function(){
+			if(!detectmob()){
+                        	$('#skel-panels-defaultWrapper').remove();
+				$('#skel-panels-fixedWrapper').remove();
+			}
+		}, 1000);
+		
+                $('.modal-btn').on('click',function(e){
+			$('#skel-panels-pageWrapper').removeAttr('style');
 			$('#'+$(this).data('modal')).modal('toggle');
-			$('#'+$(this).data('modal')).modal().css({
-                		'top': function () {
-					console.log(window.pageYOffset);
-                    			return window.pageYOffset;
-                		},
-				'margin-top': '30px',
-            		});
-			//console.log($('#'+$(this).data('modal')).modal());
 			$('.modal-backdrop').removeClass('modal-backdrop');
 		});
 

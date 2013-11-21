@@ -3,7 +3,7 @@
  * GET home page.
  */
 
-function readJsonFileSync(filepath, encoding){	
+function readJsonFile(filepath, encoding){	
 	var fs = require('fs');
 
 	if (typeof (encoding) == 'undefined'){
@@ -16,7 +16,7 @@ function readJsonFileSync(filepath, encoding){
 
 function getConfig(file){
 	var filepath = __dirname + '/../public/json/' + file;
-	return readJsonFileSync(filepath);
+	return readJsonFile(filepath);
 }
 
 
